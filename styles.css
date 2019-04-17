@@ -1,0 +1,137 @@
+body {
+    font-family: PT Sans;
+    font-size:14px;
+    line-height: 22px;
+}
+.header {
+    width: 980px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+#logo {
+    background: dimgrey;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#phone {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-right: 5px;
+}
+.menu {
+    background: dimgrey;
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+}
+.menu li {
+    display: inline-block;
+}
+
+.menu li:after {
+    content: "|";
+    color: white;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    /*padding-bottom: 20px;*/
+    margin: 0 10px 0 10px;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu  a, .menu a:visited {color: white;}
+.menu a.current, .menu a:hover{color: white;}
+.menu a:before,
+.menu a:after {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    transition: .8s;
+}
+img {
+    width: 100%;
+}
+#content {
+    width: 980px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.news {
+    background: dimgrey;
+    width: 30%;
+    padding: 5px;
+}
+.news-item {
+    margin: 0;
+    padding: 0 5px;
+
+}
+a {
+    text-decoration: none;
+
+}
+
+#text {
+    float: right;
+    width: 70%;
+    margin-left: 10px;
+}
+h2 {
+    margin-top: 0;
+}
+
+.footer {
+    background: #777777;
+    width: 100%;
+    /*height: 100px;*/
+    margin-top: 30px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#f_1{
+    width: 32%;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+#f_2{
+    width: 32%;
+    margin-top: 20px;
+}
+ul.footer_menu {
+    list-style: none;
+    color: white;
+}
+.footer_menu li:before{
+    color: white;
+}
+.footer_menu  a, .footer_menu a:visited {color: white;}
+.footer_menu a:hover{color: white;}
+
+#f_3{
+    width: 32%;
+    margin-top: 20px;
+}
+#f_3 img{
+    width: 20px;
+    margin: 5px;
+
+}
